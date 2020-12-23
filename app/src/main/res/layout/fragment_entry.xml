@@ -1,0 +1,405 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:layout_margin="1dp">
+
+    <Button
+        android:id="@+id/entry_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#96c418"
+        android:fontFamily="@font/gaegubold"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        tools:text="Wed Nov 14 11:56 EST 2018" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="@font/dumb3"
+                android:gravity="center_horizontal"
+                android:paddingBottom="0dp"
+                android:text="@string/entry_greeting1"
+                android:textColor="@color/brown"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/gaegubold"
+                android:textSize="25sp"
+                android:gravity="center_horizontal"
+
+                android:text="@string/entry_greeting2"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/Widget.AppCompat.RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:progressTint="@color/cream"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/gaegubold"
+                android:textSize="25sp"
+                android:gravity="center_horizontal"
+                android:text="@string/entry_photo_label"
+                android:textColor="@color/brown"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/entry_photo"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:background="@android:color/darker_gray"
+                    android:cropToPadding="true"
+                    android:gravity="center_horizontal"
+                    android:scaleType="centerInside" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/entry_camera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="0dp"
+
+                        android:background="@color/latte"
+                        android:src="@android:drawable/ic_menu_camera"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/entry_gallery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@color/latte"
+                        android:src="@android:drawable/ic_menu_gallery" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/entry_solved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/gaegubold"
+                    android:text="@string/entry_solved_label"
+                    android:textColor="@color/brown"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gaegubold"
+                android:textSize="25sp"
+                android:text="@string/entry_title_label"
+                android:textStyle="bold"
+                android:textColor="@color/brown" />
+
+            <EditText
+                android:id="@+id/entry_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+
+                android:fontFamily="@font/gaegubold"
+                android:textSize="25sp"
+                android:textCursorDrawable="@color/cream"
+                android:hint="@string/entry_title_hint" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gaegubold"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="25sp"
+                android:text="@string/entry_good_label"
+                android:textColor="@color/brown" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gaegubold"
+                        android:textSize="25sp"
+                        android:text="   1   "
+                        android:textColor="@color/brown" />
+
+                    <EditText
+                        android:id="@+id/entry_good1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text|textMultiLine"
+                        android:fontFamily="@font/gaegubold"
+                        android:textSize="25sp"
+                        android:hint="@string/entry_good_hint" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gaegubold"
+                        android:textSize="25sp"
+                        android:text="   2   "
+                        android:textColor="@color/brown" />
+                    <EditText
+                        android:id="@+id/entry_good2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text|textMultiLine"
+                        android:fontFamily="@font/gaegubold"
+                        android:textSize="20sp"
+                        android:hint="@string/entry_good_hint" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gaegubold"
+                        android:textSize="25sp"
+                        android:text="   3   "
+                        android:textColor="@color/brown" />
+                    <EditText
+                        android:id="@+id/entry_good3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text|textMultiLine"
+                        android:fontFamily="@font/gaegubold"
+                        android:textSize="20sp"
+                        android:hint="@string/entry_good_hint" />
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/gaegubold"
+                android:textSize="25sp"
+                android:text="@string/entry_ref_label"
+                android:textColor="@color/brown" />
+            <EditText
+                android:id="@+id/entry_reflection"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="175dp"
+                android:padding="5dp"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"
+                android:fontFamily="@font/gaegubold"
+                android:textSize="25sp"
+                android:hint="@string/entry_ref_hint" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+            <LinearLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/gaegubold"
+                    android:textSize="25sp"
+                    android:text="@string/entry_video_label"
+                    android:textColor="@color/brown" />
+
+
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/videoView"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+
+                    app:videoId="dfqPJp7Q7qE"
+                    app:autoPlay="true"
+                    app:showFullScreenButton="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gaegubold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"                    android:textSize="25sp"
+                    android:text="LINK"
+                    android:textColor="@color/brown" />
+                <EditText
+                    android:id="@+id/entry_song_link"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gaegubold"
+                    android:textSize="18sp"
+                    android:hint="@string/entry_link_hint" />
+
+
+            </LinearLayout>
+
+            <Button
+            android:id="@+id/entry_suspect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gaegubold"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/roundbutton"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:text="@string/entry_suspect_text"
+            android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/dumb3"
+                android:gravity="center_horizontal"
+                android:paddingBottom="0dp"
+                android:text="DONE FOR THE DAY!"
+                
+                android:textColor="@color/brown"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+            <Button
+                android:id="@+id/entry_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gaegubold"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/roundbutton"
+
+                android:layout_marginBottom="20dp"
+                android:text="@string/entry_report_text"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
